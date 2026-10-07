@@ -15,6 +15,15 @@ const bodyBackgroundColor = "#fffaf0";
 const xScale = d3.scaleLinear();
 const yScale = d3.scaleLinear();
 
+let innerChartS;
+
+const tooltipWidth = 65;
+const tooltipHeight = 32;
+
+const xScaleS = d3.scaleLinear();
+const yScaleS = d3.scaleLinear();
+const colorScale = d3.scaleOrdinal();
+
 // Create a bin generator using d3.bin
 const binGenerator = d3.bin()
     .value(d => d.energyConsumption);
